@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="shortcut icon" href="app/image/favcon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Netflix - Altered Carbon Resleeved</title>
+</head>
+<body>
+    <section class="main">
+        <div class="main-width">
+            <nav>
+                <img class="logo-netflix" src="app/image/Netflix_Logo_PMS.png" alt="logo-netflix">
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">My List</a></li>
+                        <input type="text" placeholder="Search" class="search"></input>                                           
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+                <img src="app/image/logo.png" alt="logo-serie" class="logo-serie">
+                <div class="box-container">
+                    <p class="recomendation">2020 | <span class="idade">16+</span> | 1h 14 min | Violência</p>
+                    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, nobis nisi repellat ipsum amet vero at vel. Labore consequuntur illo ipsum non aspernatur. Quod quis architecto eaque sint, laudantium dignissimos!</p>
+                    <a href="#"><i class='bx bx-play' ></i>PLAY</a>
+                    <a href="#" class="cta"><i class='bx bx-list-plus'></i> MY LIST</a>
+                </div>
+            </div>
+
+            <div class="trailer-button">
+                <a class="play" onclick="toggleVideo()"><img class="play-button" src="app/image/botao-play.png" alt="play-button"></a>
+                <p class="trailer-text">WATCH TRAILER</p>
+            </div>
+
+            <div class="trailer">
+                <video src="app/video/trailer.webm" controls="true"></video>
+                <img src="app/image/x.png" class="close" onclick="toggleVideo()">
+            </div>
+        </div>
+    </section>
+
+    <script src="app/js/main.js"></script>
+
+    
+</body>
+</html>

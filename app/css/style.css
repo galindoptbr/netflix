@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(/app/image/background-site.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.main-width {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 30px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+    
+}
+
+.navbar ul li a:hover {
+    color: rgb(190, 2, 2);
+    transition: .6s;
+}
+
+.search {
+    background: transparent;
+    backdrop-filter: blur(2px);
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    outline: none;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 130px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.logo-netflix {
+    width: 150px;
+   
+}
+
+.container {
+    padding-top: 1.5rem;
+}
+
+.logo-serie {
+    width: 400px;
+    margin-left: -40px;
+    margin-bottom: -40px;
+}
+
+.recomendation {
+    color: rgb(163, 162, 162);
+    font-weight: 500;
+}
+
+.idade {
+    background: red;
+    padding: 1px 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.795);
+    padding: 1rem 0 1rem;
+    width: 500px;
+    font-weight: 400;
+    
+}
+
+.container .box-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: red;
+    padding: 5px 15px;
+    line-height: 1.4;
+    border: 1px solid red;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .6s;
+}
+
+.container .box-container a:hover {
+    background: transparent;
+    border: 1px solid white;
+}
+
+.box-container a i {
+    vertical-align: middle;
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+.container .box-container a.cta {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+    transition: .6s;
+}
+
+.container .box-container a.cta:hover {
+    background: red;
+    border: 1px solid red;
+}
+
+.bx-play {
+    font-size: 20px;
+}
+
+.trailer-button {
+    display: flex;
+    align-items: center;
+    padding-top: 8rem;
+}
+
+.trailer-button p {
+    padding-left: 1rem;
+}
+
+.play-button {
+    width: 45px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.play-button:hover {
+    transform: scale(1.2);
+}
+
+.trailer-text {
+    color: white;
+    font-weight: 600;
+}
+
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+    transition: .5s;
+}
+
+.trailer video {
+    max-width: 1000px;
+    outline: none;
+}
+
+.close {
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
